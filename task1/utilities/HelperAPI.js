@@ -1,6 +1,11 @@
 const axios = require('axios')
 
 class HelperAPI {
+    /**
+     * Returns full GET response object from given url.
+     * @param {*} url endpoint for GET request
+     * @returns GET response
+     */
     async getRequest(url) {
         try {
             const res = await axios.get(url)
@@ -11,6 +16,12 @@ class HelperAPI {
         }
     }
 
+    /**
+     * Returns full POST response object from given url
+     * @param {*} url endpoint for POST request
+     * @param {*} auth If basic AUTH is used provide payload
+     * @returns full POST response object from given url.
+     */
     async postRequest(url, auth) {
         try {
             const res = await axios.post(
@@ -28,17 +39,32 @@ class HelperAPI {
         }
     }
 
-    async validateRequestStatus(method, url, expectedStatus, err = false) {
+    /**
+     * Validates response status code
+     * @param {*} method Request method. For now only POST or GET
+     * @param {*} url endpoint for request
+     * @param {*} expectedStatus expected status code. E.G 404
+     */
+    async validateRequestStatus(method, url, expectedStatus) {
         let res
         if (method.toLowerCase() === 'get') {
             res = await this.getRequest(url)
         } else if (method.toLowerCase() === 'post') {
             res = await this.postRequest(url)
+        } else {
+            console.log('Method not supported yet')
+            return
         }
-        const status = err ? await res.status : await res.status
+        const status = await res.status
         expect(status).toEqual(expectedStatus)
     }
 
+    /**
+     * Using Jasmine toBe Method validates given data and logs into console
+     * @param {*} data Actual data
+     * @param {*} expectedData Expected data
+     * @param {*} reverse If true will return passed with expected data not-matching
+     */
     async validateRequestToBe(data, expectedData, reverse = false) {
         if ((reverse = true)) {
             expect(data).not.toBe(expectedData)
@@ -48,17 +74,31 @@ class HelperAPI {
             console.log(`${data} matched expected data: ${expectedData}`)
         }
     }
-
+    /**
+     * Using Jasmine toEqual Method validates given data and logs into console
+     * @param {*} data Actual data
+     * @param {*} expectedData Expected data
+     */
     async validateRequestToEqual(data, expectedData) {
         expect(data).toEqual(expectedData)
         console.log(`${data} matched expected data: ${expectedData}`)
     }
 
+    /**
+     * Using Jasmine toContain Method validates given data and logs into console
+     * @param {*} data Actual data
+     * @param {*} expectedData Expected data
+     */
     async validateRequestToContainl(data, expectedData) {
         expect(data).toContain(expectedData)
         console.log(`${data} contains: ${expectedData}`)
     }
 
+    /**
+     * Using Jasmine toMatch Method validates given data and logs into console
+     * @param {*} data Actual data
+     * @param {*} expectedData Expected data
+     */
     async validateRequestToMatch(data, expectedPattern) {
         expect(data).toMatch(expectedPattern)
         console.log(`${data} matched pattern: ${expectedPattern}`)

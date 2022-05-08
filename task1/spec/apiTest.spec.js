@@ -38,7 +38,7 @@ describe('Get request tests for info site', () => {
 describe('Post request tests for target page', () => {
     it('POST request: Target page should return 403 with empty authentication', async () => {
         const res = await TargetHelper.getAccessData()
-        await HelperAPI.validateRequestStatus('post', res.data.targetUrl, 401, true)
+        await HelperAPI.validateRequestStatus('post', res.data.targetUrl, 401)
     })
 
     it('POST request: Target should return correct IP adress', async () => {

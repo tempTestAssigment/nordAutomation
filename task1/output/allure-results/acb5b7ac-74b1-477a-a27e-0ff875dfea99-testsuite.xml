@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1652024381476' stop='1652024387396'>
+    <name>Post request tests for target page</name>
+    <title>Post request tests for target page</title>
+    <test-cases>
+        <test-case start='1652024381477' status='passed' stop='1652024381884'>
+            <name>POST request: Target page should return 403 with empty authentication</name>
+            <title>POST request: Target page should return 403 with empty authentication</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1652024381885' status='passed' stop='1652024384376'>
+            <name>POST request: Target should return correct IP adress</name>
+            <title>POST request: Target should return correct IP adress</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1652024384379' status='passed' stop='1652024387394'>
+            <name>POST request: Target should return correct Token</name>
+            <title>POST request: Target should return correct Token</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

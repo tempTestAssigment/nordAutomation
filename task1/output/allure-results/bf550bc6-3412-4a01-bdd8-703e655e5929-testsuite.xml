@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1652024379811' stop='1652024381461'>
+    <name>Get request tests for info site</name>
+    <title>Get request tests for info site</title>
+    <test-cases>
+        <test-case start='1652024379811' status='passed' stop='1652024380066'>
+            <name>GET request for http://ptsv2.com/t/fu807-1554722621/post should return status code 200 </name>
+            <title>GET request for http://ptsv2.com/t/fu807-1554722621/post should return status code 200 </title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1652024380070' status='passed' stop='1652024380321'>
+            <name>GET request: http://ptsv2.com/t/fu807-1554722621/post should return correct username</name>
+            <title>GET request: http://ptsv2.com/t/fu807-1554722621/post should return correct username</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1652024380321' status='passed' stop='1652024380572'>
+            <name>GET request http://ptsv2.com/t/fu807-1554722621/post should return correct password</name>
+            <title>GET request http://ptsv2.com/t/fu807-1554722621/post should return correct password</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1652024380575' status='passed' stop='1652024381459'>
+            <name>GET request http://ptsv2.com/t/fu807-1554722621/post should  correct target url</name>
+            <title>GET request http://ptsv2.com/t/fu807-1554722621/post should  correct target url</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

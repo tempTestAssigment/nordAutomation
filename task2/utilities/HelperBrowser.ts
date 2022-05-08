@@ -1,14 +1,34 @@
 class HelperBrowser {
-    async findElement(selector: string, timeToWait = 10) {
+    /**
+     *
+     * @param selector selector to find elmenet
+     * @param timeToWait time to wait for element in seconds
+     * @returns Webdriver element
+     */
+    async findElement(selector: string, timeToWait = 10): Promise<WebdriverIO.Element> {
         await $(selector).waitForDisplayed({ timeout: timeToWait * 1000 })
         const elem = await $(selector)
         return elem
     }
+
+    /**
+     *
+     * @param selector selector to find elmenet
+     * @param timeToWait time to wait for element in seconds
+     * @returns Array of Webdriver elements
+     */
     async findElements(selector: string, timeToWait = 10): Promise<WebdriverIO.ElementArray> {
         await $$(selector)[0].waitForDisplayed({ timeout: timeToWait * 1000 })
         const elemArr: WebdriverIO.ElementArray = await $$(selector)
         return elemArr
     }
+
+    /**
+     *
+     * @param selector selector to find elmenet
+     * @param timeout time to wait for element to be clicked in seconds
+     * @returns void
+     */
     async click(selector: string, timeout = 20) {
         const elem = await this.findElement(selector)
         await elem.waitForClickable({ timeout: timeout * 1000 })
@@ -17,9 +37,7 @@ class HelperBrowser {
         for (let index = 1; index < maxRetries; index += 1) {
             try {
                 await elem.click()
-                // await Logger.logInfoToFileOnly(
-                //   `Clicked element by selector: ${await element.selector}`
-                // );
+
                 return
             } catch (e) {
                 if (
@@ -29,9 +47,6 @@ class HelperBrowser {
                         'An element command could not be completed because the element is not visible on the page'
                     )
                 ) {
-                    //   await Logger.logInfoToFileOnly(
-                    //     `Got error: ${e.message} during click, retry #${index}`
-                    //   );
                     await browser.pause(250)
                     await elem.scrollIntoView()
                 } else {

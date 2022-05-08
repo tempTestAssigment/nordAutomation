@@ -1,9 +1,9 @@
 <?xml version='1.0'?>
-<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1652016774697' stop='1652016777743'>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1652018484887' stop='1652018501830'>
     <name>Task 2 scenario</name>
     <title>Task 2 scenario</title>
     <test-cases>
-        <test-case start='1652016774698' status='passed' stop='1652016777739'>
+        <test-case start='1652018484889' status='failed' stop='1652018501823'>
             <name>Task 2 automation</name>
             <title>Task 2 automation</title>
             <labels>
@@ -15,13 +15,13 @@
                 <parameter kind='argument' name='browser' value='chrome-101.0.4951.41'/>
             </parameters>
             <steps>
-                <step start='1652016774700' status='passed' stop='1652016774700'>
+                <step start='1652018484890' status='passed' stop='1652018484890'>
                     <name>Starting execution for finding carrer categories titles</name>
                     <title>Starting execution for finding carrer categories titles</title>
                     <attachments/>
                     <steps/>
                 </step>
-                <step start='1652016774700' status='passed' stop='1652016774700'>
+                <step start='1652018484890' status='passed' stop='1652018484890'>
                     <name>Navigating to: function (...args) {
                             /**
                              * use sync mode if:
@@ -59,50 +59,17 @@
                     <attachments/>
                     <steps/>
                 </step>
-                <step start='1652016777467' status='passed' stop='1652016777467'>
-                    <name>All departments</name>
-                    <title>All departments</title>
-                    <attachments/>
-                    <steps/>
-                </step>
-                <step start='1652016777512' status='passed' stop='1652016777512'>
-                    <name>Apps</name>
-                    <title>Apps</title>
-                    <attachments/>
-                    <steps/>
-                </step>
-                <step start='1652016777557' status='passed' stop='1652016777557'>
-                    <name>Core</name>
-                    <title>Core</title>
-                    <attachments/>
-                    <steps/>
-                </step>
-                <step start='1652016777600' status='passed' stop='1652016777600'>
-                    <name>Customer Success</name>
-                    <title>Customer Success</title>
-                    <attachments/>
-                    <steps/>
-                </step>
-                <step start='1652016777647' status='passed' stop='1652016777647'>
-                    <name>General</name>
-                    <title>General</title>
-                    <attachments/>
-                    <steps/>
-                </step>
-                <step start='1652016777693' status='passed' stop='1652016777693'>
-                    <name>Infra</name>
-                    <title>Infra</title>
-                    <attachments/>
-                    <steps/>
-                </step>
-                <step start='1652016777737' status='passed' stop='1652016777737'>
-                    <name>Marketing</name>
-                    <title>Marketing</title>
-                    <attachments/>
-                    <steps/>
-                </step>
             </steps>
-            <attachments/>
+            <attachments>
+                <attachment title='Screenshot' source='6ad47391-884c-48f8-af32-73683cf87b53-attachment.png' type='image/png' size='92275'/>
+            </attachments>
+            <failure>
+                <message>Error: element ("*=Career") still not displayed after 10000ms</message>
+                <stack-trace>Error: element ("*=Career") still not displayed after 10000ms
+                    at async HelperBrowser.findElement (/Users/ugniusnorkevicius/Desktop/nordAutomation/nordAutomation/task2/utilities/HelperBrowser.ts:3:9)
+                    at async HelperBrowser.click (/Users/ugniusnorkevicius/Desktop/nordAutomation/nordAutomation/task2/utilities/HelperBrowser.ts:13:22)
+                    at async UserContext.&lt;anonymous> (/Users/ugniusnorkevicius/Desktop/nordAutomation/nordAutomation/task2/scenarios/task2.ts:10:9)</stack-trace>
+            </failure>
         </test-case>
     </test-cases>
 </ns2:test-suite>
