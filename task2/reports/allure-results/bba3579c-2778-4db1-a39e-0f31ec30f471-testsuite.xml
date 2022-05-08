@@ -1,9 +1,9 @@
 <?xml version='1.0'?>
-<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1652014813819' stop='1652014817311'>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1652016774697' stop='1652016777743'>
     <name>Task 2 scenario</name>
     <title>Task 2 scenario</title>
     <test-cases>
-        <test-case start='1652014813821' status='passed' stop='1652014817306'>
+        <test-case start='1652016774698' status='passed' stop='1652016777739'>
             <name>Task 2 automation</name>
             <title>Task 2 automation</title>
             <labels>
@@ -15,13 +15,13 @@
                 <parameter kind='argument' name='browser' value='chrome-101.0.4951.41'/>
             </parameters>
             <steps>
-                <step start='1652014813823' status='passed' stop='1652014813823'>
+                <step start='1652016774700' status='passed' stop='1652016774700'>
                     <name>Starting execution for finding carrer categories titles</name>
                     <title>Starting execution for finding carrer categories titles</title>
                     <attachments/>
                     <steps/>
                 </step>
-                <step start='1652014813823' status='passed' stop='1652014813823'>
+                <step start='1652016774700' status='passed' stop='1652016774700'>
                     <name>Navigating to: function (...args) {
                             /**
                              * use sync mode if:
@@ -59,43 +59,43 @@
                     <attachments/>
                     <steps/>
                 </step>
-                <step start='1652014817006' status='passed' stop='1652014817006'>
+                <step start='1652016777467' status='passed' stop='1652016777467'>
                     <name>All departments</name>
                     <title>All departments</title>
                     <attachments/>
                     <steps/>
                 </step>
-                <step start='1652014817057' status='passed' stop='1652014817057'>
+                <step start='1652016777512' status='passed' stop='1652016777512'>
                     <name>Apps</name>
                     <title>Apps</title>
                     <attachments/>
                     <steps/>
                 </step>
-                <step start='1652014817104' status='passed' stop='1652014817104'>
+                <step start='1652016777557' status='passed' stop='1652016777557'>
                     <name>Core</name>
                     <title>Core</title>
                     <attachments/>
                     <steps/>
                 </step>
-                <step start='1652014817156' status='passed' stop='1652014817156'>
+                <step start='1652016777600' status='passed' stop='1652016777600'>
                     <name>Customer Success</name>
                     <title>Customer Success</title>
                     <attachments/>
                     <steps/>
                 </step>
-                <step start='1652014817203' status='passed' stop='1652014817203'>
+                <step start='1652016777647' status='passed' stop='1652016777647'>
                     <name>General</name>
                     <title>General</title>
                     <attachments/>
                     <steps/>
                 </step>
-                <step start='1652014817253' status='passed' stop='1652014817253'>
+                <step start='1652016777693' status='passed' stop='1652016777693'>
                     <name>Infra</name>
                     <title>Infra</title>
                     <attachments/>
                     <steps/>
                 </step>
-                <step start='1652014817302' status='passed' stop='1652014817302'>
+                <step start='1652016777737' status='passed' stop='1652016777737'>
                     <name>Marketing</name>
                     <title>Marketing</title>
                     <attachments/>

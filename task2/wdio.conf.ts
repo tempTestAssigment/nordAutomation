@@ -7,7 +7,7 @@ let hostname
 let port
 let path
 let protocol
-if (grid) {
+if (!grid) {
     services = [
         [
             'chromedriver',
