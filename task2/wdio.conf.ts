@@ -27,7 +27,7 @@ if (!grid) {
 }
 
 const overrides = {
-    baseUrl: 'https://delfi.lt',
+    baseUrl: 'https://tesonet.com',
     services: services,
     hostname: hostname,
     port: port,
