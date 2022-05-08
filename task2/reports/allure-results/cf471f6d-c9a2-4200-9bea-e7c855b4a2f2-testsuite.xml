@@ -1,0 +1,108 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1652014813819' stop='1652014817311'>
+    <name>Task 2 scenario</name>
+    <title>Task 2 scenario</title>
+    <test-cases>
+        <test-case start='1652014813821' status='passed' stop='1652014817306'>
+            <name>Task 2 automation</name>
+            <title>Task 2 automation</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-101.0.4951.41'/>
+            </parameters>
+            <steps>
+                <step start='1652014813823' status='passed' stop='1652014813823'>
+                    <name>Starting execution for finding carrer categories titles</name>
+                    <title>Starting execution for finding carrer categories titles</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1652014813823' status='passed' stop='1652014813823'>
+                    <name>Navigating to: function (...args) {
+                            /**
+                             * use sync mode if:
+                             * - @wdio/sync package is installed and can be resolved
+                             * - if a global.browser is define so we run with wdio testrunner
+                             * - we are in a fiber context (flag is set when outer function is wrapped into fibers context)
+                             *
+                             * also if we run command asynchronous and the command suppose to return an element, we
+                             * apply `chainElementQuery` to allow chaining of these promises.
+                             */
+                            const command = hasWdioSyncSupport &amp;&amp; wdioSync &amp;&amp; Boolean(global.browser) &amp;&amp; !exports.runAsync &amp;&amp; !exports.asyncSpec
+                                ? wdioSync.wrapCommand(commandName, fn)
+                                : ELEMENT_QUERY_COMMANDS.includes(commandName) || commandName.endsWith('$')
+                                    ? chainElementQuery
+                                    : wrapCommandFn;
+                            return command.apply(this, args);
+                        }/</name>
+                    <title>Navigating to: function (...args) {
+                            /**
+                             * use sync mode if:
+                             * - @wdio/sync package is installed and can be resolved
+                             * - if a global.browser is define so we run with wdio testrunner
+                             * - we are in a fiber context (flag is set when outer function is wrapped into fibers context)
+                             *
+                             * also if we run command asynchronous and the command suppose to return an element, we
+                             * apply `chainElementQuery` to allow chaining of these promises.
+                             */
+                            const command = hasWdioSyncSupport &amp;&amp; wdioSync &amp;&amp; Boolean(global.browser) &amp;&amp; !exports.runAsync &amp;&amp; !exports.asyncSpec
+                                ? wdioSync.wrapCommand(commandName, fn)
+                                : ELEMENT_QUERY_COMMANDS.includes(commandName) || commandName.endsWith('$')
+                                    ? chainElementQuery
+                                    : wrapCommandFn;
+                            return command.apply(this, args);
+                        }/</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1652014817006' status='passed' stop='1652014817006'>
+                    <name>All departments</name>
+                    <title>All departments</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1652014817057' status='passed' stop='1652014817057'>
+                    <name>Apps</name>
+                    <title>Apps</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1652014817104' status='passed' stop='1652014817104'>
+                    <name>Core</name>
+                    <title>Core</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1652014817156' status='passed' stop='1652014817156'>
+                    <name>Customer Success</name>
+                    <title>Customer Success</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1652014817203' status='passed' stop='1652014817203'>
+                    <name>General</name>
+                    <title>General</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1652014817253' status='passed' stop='1652014817253'>
+                    <name>Infra</name>
+                    <title>Infra</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1652014817302' status='passed' stop='1652014817302'>
+                    <name>Marketing</name>
+                    <title>Marketing</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

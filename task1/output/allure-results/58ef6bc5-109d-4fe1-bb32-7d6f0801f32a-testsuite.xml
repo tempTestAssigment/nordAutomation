@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1651781952918' stop='1651781959788'>
+    <name>Targer page tests</name>
+    <title>Targer page tests</title>
+    <test-cases>
+        <test-case start='1651781952918' status='passed' stop='1651781954048'>
+            <name>Target page should return 403 if not authenticated</name>
+            <title>Target page should return 403 if not authenticated</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1651781954049' status='passed' stop='1651781956712'>
+            <name>Response Token should be correct</name>
+            <title>Response Token should be correct</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1651781956714' status='passed' stop='1651781959787'>
+            <name>Response IP adress should be correct</name>
+            <title>Response IP adress should be correct</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

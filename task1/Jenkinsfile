@@ -1,0 +1,42 @@
+pipeline {
+    agent any
+    
+    options {
+     buildDiscarder(logRotator(numToKeepStr: '5'))
+    }
+  
+    stages {
+        stage ('Build'){
+            steps {
+                script {
+                    sh """
+
+                       cd task1 && /home/jenkins/.nvm/versions/node/v14.19.2/bin/npm install
+                    """
+                }
+            }
+        }
+        stage('User choice selected tests') {
+            steps {
+                script {                           
+                    sh "npm run test"
+                }
+            }
+        }
+    }
+    post {
+      always {
+            script {
+             // publish Allure reporter
+            allure([
+                    includeProperties: false,
+                    jdk: '',
+                    properties: [],
+                    reportBuildPolicy: 'ALWAYS',
+                    results: [[path: 'output/allure-results']]
+            ])
+    }
+      }
+    }
+}
+
