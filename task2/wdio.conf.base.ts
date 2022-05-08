@@ -1,6 +1,5 @@
 import type { Options } from '@wdio/types'
 const fs = require('fs')
-require('dotenv').config()
 
 export const config: Options.Testrunner = {
     autoCompileOpts: {
